@@ -27,6 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .background{
@@ -74,10 +75,17 @@
 }
 
 .container {
-  margin-top: 90vh;
+  margin-top: 50px;
   padding: 35px;
   background: white;
   margin-bottom: 100px;
+}
+
+.myHr {
+  max-height: 1px;
+  width: 1px;
+  background-color:white;
+  padding: 15px;
 }
 
 button {
@@ -117,7 +125,20 @@ button {
   margin: 10px;
   font-size: 20px;
   text-align: center;
+}
 
+.headtitle {
+  margin-top: 90vh;
+  font-family: "Open Sans","HelveticaNeue","Helvetica Neue",sans;
+  font-size: 25px;
+  color: white;
+  padding: 15px;
+}
+.headtitle2 { 
+  font-family: "Open Sans","HelveticaNeue","Helvetica Neue",sans;
+  font-size: 25px;
+  color: white;
+  padding: 15px;
 }
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

@@ -163,44 +163,7 @@ class Issue extends Component {
           </div>
         </div>
         <div className="row">
-          <div className="input-field col s12">
-            <input
-              id="email"
-              type="email"
-              className="validate"
-              onChange={event => {this.setState({email: event.target.value})}}
-              />
-            <label htmlFor="email">Email</label>
-          </div>
-        </div>
-        <div className="row">
-          <div className="input-field col s9">
-            <input
-              type="text"
-              onChange={event => {this.setState({id: event.target.value})}}
-              />
-            <label htmlFor="password">Identification number</label>
-          </div>
-
-          <div className="input-field col s3">
-            <input
-              type="text"
-              onChange={event => {this.setState({validity: event.target.value})}}
-              />
-            <label htmlFor="password">Valid until</label>
-          </div>
-        </div>
-        <div className="row">
           <div className="col s12">
-            <div className="input-field inline">
-              <input
-                id="email"
-                type="text"
-                onChange={event => {this.setState({pob: event.target.value})}}
-                />
-              <label
-                htmlFor="email" data-error="wrong" data-success="right">Place of birth</label>
-            </div>
             <div className="input-field inline">
               <input
                 id="email"
@@ -227,6 +190,7 @@ class Issue extends Component {
     console.log('queryState' , this.state.query)
     return(
       <div className="backgroundBIG">
+      <div className="headtitle Montserrat">Issue Document</div>
       <div className="container z-depth-4">
         <div className="row">
           {this.renderPersonalData()}
@@ -385,6 +349,7 @@ class User extends Component {
       <div className="background">
 
         <div className="containerMe">
+        <div className="headtitle2 Montserrat">User</div>
           <input className="inputCode Montserrat" type="text" onChange={this.handleCodeChange} value={this.state.inputCode} />
           <button className="grant Montserrat" onClick={this.grantAccess}>Grant Access</button>
         </div>
@@ -503,6 +468,8 @@ class Officer extends Component {
 
         <div className="containerMe">
           <div>
+
+            <div className="headtitle2 Montserrat">Officer</div>
             <button className="grant" onClick={this.requestCode}>request code</button>
             <div className="code">{code}</div>
           </div>

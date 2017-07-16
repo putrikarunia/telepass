@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.backgroundBIG{
+  width: 100vw;
+  height: 100%;
+  background: url('def.jpg');
+  background-size: cover;
+  background-position: center -350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background{
+  width: 100vw;
+  height: 100vh;
+  background: url('def.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputCode {
+  position: relative;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  color: #777;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.grant {
+  position: relative;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  color: #777;
+  padding: 10px 15px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.code {
+  position: relative;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 15px;
+  margin: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.container {
+  margin-top: 90vh;
+  padding: 35px;
+  background: white;
+  margin-bottom: 100px;
+}
+
+button {
+  margin: 5px;
+}
+.containerMe {
+  margin-top: 300px;
+  width: 300px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.stuff {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Montserrat {
+  font-family: "Roboto","HelveticaNeue","Helvetica Neue",sans;
+  text-align: center;
+  letter-spacing: 1.4;
+}
+
+.data {
+  position: relative;
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: #444;
+  padding: 10px 15px;
+  margin: 10px;
+  font-size: 20px;
+  text-align: center;
+
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

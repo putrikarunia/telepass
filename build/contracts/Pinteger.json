@@ -1,0 +1,174 @@
+{
+  "contract_name": "Pinteger",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "initialSupply",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getAddress",
+      "outputs": [
+        {
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getMyBalance",
+      "outputs": [
+        {
+          "name": "supply",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "receiver",
+          "type": "address"
+        },
+        {
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "sendCoin",
+      "outputs": [
+        {
+          "name": "sufficient",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "getBalance",
+      "outputs": [
+        {
+          "name": "bal",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000c57fe5b5b6127106000818155600160a060020a0333168152600160205260409020555b5b61022b8061003c6000396000f300606060405263ffffffff60e060020a600035041663378dc3dc811461004d57806338cc48311461006f5780634c7389091461009b57806390b98a11146100bd578063f8b2cb4f146100f0575bfe5b341561005557fe5b61005d61011e565b60408051918252519081900360200190f35b341561007757fe5b61007f610124565b60408051600160a060020a039092168252519081900360200190f35b34156100a357fe5b61005d610129565b60408051918252519081900360200190f35b34156100c557fe5b6100dc600160a060020a0360043516602435610146565b604080519115158252519081900360200190f35b34156100f857fe5b61005d600160a060020a03600435166101e0565b60408051918252519081900360200190f35b60005481565b335b90565b600160a060020a0333166000908152600160205260409020545b90565b600160a060020a0333166000908152600160205260408120548290101561016f575060006101da565b600160a060020a03338116600081815260016020908152604080832080548890039055938716808352918490208054870190558351868152935191937fddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef929081900390910190a35060015b92915050565b600160a060020a0381166000908152600160205260409020545b9190505600a165627a7a723058208591d19cbcc78738c5aca47b6109ac5fbe2d7493004dc1379e172050cf02a27f0029",
+  "networks": {
+    "1500046216876": {
+      "events": {
+        "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "_to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_value",
+              "type": "uint256"
+            }
+          ],
+          "name": "Transfer",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x6287a3915ae9e05f8118aafdbec5a3939cc4b3d0",
+      "updated_at": 1500060184100
+    },
+    "1500096324565": {
+      "events": {
+        "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "name": "_from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "name": "_to",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_value",
+              "type": "uint256"
+            }
+          ],
+          "name": "Transfer",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x13fc1fe9fd8dda21540b1daadb5e9f2afe5e7c2d",
+      "updated_at": 1500101688412
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1500101688412
+}
